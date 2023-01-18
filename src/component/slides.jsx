@@ -4,9 +4,8 @@ import styled from "styled-components";
 export default function Slider() {
   const [changeTab, setChangeTab] = useState(0);
   const { title } = data[changeTab];
-  const StyleMotionCpmponent = styled.div`
-    transition: height 0.25s linear;
-    border-radius: 0.25rem;
+  const StyleMotionComponent = styled.div`
+    transition: ease-in-out 3s;
   `;
   return (
     <div className="slider flex flex-col justify-center item-center ">
@@ -29,16 +28,19 @@ export default function Slider() {
           );
         })}
       </div>
-      <StyleMotionCpmponent>
-        <div className="shadow-2xl" style={{ height: "33pc" }}>
-          {title.length == 0 ? (
+
+      <div className="shadow-2xl" style={{ height: "33pc" }}>
+        {title.length == 0 ? (
+          <StyleMotionComponent>
             <div className="slider-page flex items-center justify-center h-full  rounded-md">
               <div className="page-title font-bold text-2xl text-center">
                 {" "}
                 No data available
               </div>
             </div>
-          ) : (
+          </StyleMotionComponent>
+        ) : (
+          <StyleMotionComponent>
             <div className="slider-page  flex flex-row p-10 rounded-md">
               <div className="page-title p-3">
                 <div className="title-description w-64 text-left p-2">
@@ -53,7 +55,7 @@ export default function Slider() {
                     );
                   })}
                 </div>
-                <button className="title-button uppercase flex ml-4  items-center p-4 pl-6 pr-6 rounded-md font-extrabold text-white bg-yellow-500 shadow-md rounded-md">
+                <button className="title-button uppercase flex ml-4  items-center p-4 pl-6 pr-6 rounded-md font-extrabold text-white bg-yellow-500 shadow-md ">
                   {title.buttonName}
                 </button>
               </div>
@@ -93,9 +95,9 @@ export default function Slider() {
                 </div>
               </div>
             </div>
-          )}
-        </div>
-      </StyleMotionCpmponent>
+          </StyleMotionComponent>
+        )}
+      </div>
     </div>
   );
 }
