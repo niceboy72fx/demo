@@ -20,7 +20,7 @@ function App() {
     console.log(e);
   };
   return (
-    <div className="App flex flex-col justify-center items-center">
+    <div className="App flex flex-col justify-center items-center ">
       {changeComponent}
       <div className="m-2">
         <input
