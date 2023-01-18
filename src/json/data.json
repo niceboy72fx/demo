@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Pencils",
+    "img": "Pencils.png",
+    "id": "1",
+    "title": {
+      "content": "Graphite Artist Quality Fine Art Drawing and Sketching Pencils Replaceable Nib Pencils. ",
+      "link": [
+        { "name": "mechanical pencils", "href": "" },
+        { "name": "architect's choice", "href": "" },
+        { "name": "executive pencils", "href": "" },
+        { "name": "engravable pencils", "href": "" }
+      ],
+      "buttonName": "shop all",
+      "banner": {
+        "title": "Offer Applicable on All Our Pencils",
+        "text": "25% off"
+      },
+      "listPen": [
+        {
+          "id": "1",
+          "name": "Aero Mechanical Pencil",
+          "price": "$99.00",
+          "wrongPrice": "$125.00",
+          "img": "AeroMechanicalPencil.png"
+        },
+        {
+          "id": "2",
+          "name": "Castell Mechanical Pencil",
+          "price": "$75.00",
+          "wrongPrice": "$99.00",
+          "img": "CastellMechanicalPencil.png"
+        },
+        {
+          "id": "3",
+          "name": "Architect Choice Pencil",
+          "price": "$45.00",
+          "wrongPrice": "$70.00",
+          "img": "ArchitectChoicePencil.png"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Market",
+    "img": "Markers.png",
+    "id": "2",
+    "title": []
+  },
+  {
+    "name": "Drawing Colors",
+    "img": "Drawing.png",
+    "id": "3",
+    "title": []
+  },
+  {
+    "name": "Notebooks",
+    "img": "Notebooks.png",
+    "id": "4",
+    "title": []
+  }
+]
